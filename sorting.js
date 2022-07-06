@@ -18,13 +18,13 @@
 			        "tr"+
 			        "<'table-footer'Blip'>",
 			      renderer: 'material'
-			    });*/
+			    });
 			    /* Default class modification */
 			    $.extend(DataTable.ext.classes, {
 			      sWrapper: "dataTables_wrapper",
 			      sFilterInput: "form-control input-sm",
 			      sLengthSelect: "form-control input-sm"
-			    });
+			    });*/
 
 			    /* Bootstrap paging button renderer */
 			    DataTable.ext.renderer.pageButton.material = function(settings, host, idx, buttons, page, pages) {
