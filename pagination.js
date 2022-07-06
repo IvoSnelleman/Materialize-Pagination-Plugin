@@ -27,9 +27,6 @@ $.fn.pageMe = function(opts){
 
     var numItems = children.length
     var numPages = Math.ceil(numItems/perPage);
-    console.log(numItems);
-    console.log(numPages);
-    console.log("Initialized pagination plugin");
     $("#total_reg").html(numItems+" Rows found");
 
     pager.data("curr",0);
