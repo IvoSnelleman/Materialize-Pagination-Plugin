@@ -12,19 +12,20 @@
 			        $('.hiddensearch').slideUp();
 			    });
 
-			    /* Set the defaults for DataTables initialisation
+			    //Set the defaults for DataTables initialisation
 			    $.extend(true, DataTable.defaults, {
 			      dom: "<'hiddensearch'f'>" +
 			        "tr"+
 			        "<'table-footer'Blip'>",
 			      renderer: 'material'
 			    });
+
 			    /* Default class modification */
-			    //$.extend(DataTable.ext.classes, {
-			    //  sWrapper: "dataTables_wrapper",
-			    //  sFilterInput: "form-control input-sm",
-			    //  sLengthSelect: "form-control input-sm"
-			    //});
+			    $.extend(DataTable.ext.classes, {
+			      sWrapper: "dataTables_wrapper",
+			      sFilterInput: "form-control input-sm",
+			      sLengthSelect: "form-control input-sm"
+			    });
 
 			    /* Bootstrap paging button renderer */
 			    DataTable.ext.renderer.pageButton.material = function(settings, host, idx, buttons, page, pages) {
